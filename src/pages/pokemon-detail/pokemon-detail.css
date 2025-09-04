@@ -1,0 +1,110 @@
+.pokemon-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-2) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+.info-value {
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+}
+
+.abilities-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.ability-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-3);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+}
+
+.ability-name {
+  font-weight: var(--font-weight-medium);
+}
+
+.hidden-ability {
+  background-color: var(--warning-500);
+  color: white;
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.stats-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.stat-name {
+  min-width: 120px;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+.stat-bar-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.stat-bar {
+  flex: 1;
+  height: 8px;
+  background-color: var(--gray-300);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--primary-500) 0%,
+    var(--secondary-500) 100%
+  );
+  transition: width var(--transition-slow);
+}
+
+.stat-number {
+  min-width: 40px;
+  font-weight: var(--font-weight-semibold);
+  text-align: right;
+  color: var(--text-primary);
+}

@@ -1,0 +1,118 @@
+.search-result-card {
+  max-width: 400px;
+  margin: 0 auto;
+  transform: scale(1.05);
+}
+
+.search-result-header {
+  text-align: center;
+  margin-bottom: var(--spacing-6);
+}
+
+.search-welcome {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.welcome-icon {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-4);
+}
+
+.welcome-title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacing-4);
+  color: var(--text-primary);
+}
+
+.welcome-description {
+  font-size: var(--font-size-lg);
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-6);
+}
+
+.search-tips {
+  text-align: left;
+  background-color: var(--bg-primary);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-md);
+  margin-top: var(--spacing-6);
+}
+
+.search-tips h4 {
+  color: var(--primary-500);
+  margin-bottom: var(--spacing-3);
+}
+
+.search-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-tips li {
+  padding: var(--spacing-2) 0;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-tips li:last-child {
+  border-bottom: none;
+}
+
+.suggestions-container {
+  text-align: center;
+  margin-bottom: var(--spacing-8);
+}
+
+.suggestions-container h3 {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-4);
+}
+
+.suggestion-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  justify-content: center;
+}
+
+.suggestion-tag {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-size: var(--font-size-sm);
+}
+
+.suggestion-tag:hover {
+  background-color: var(--primary-500);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.search-not-found {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.not-found-icon {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-4);
+}
+
+.not-found-title {
+  color: var(--error-500);
+  margin-bottom: var(--spacing-4);
+}
+
+.not-found-description {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-6);
+}
