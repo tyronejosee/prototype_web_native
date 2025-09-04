@@ -6,13 +6,13 @@
     <title>PokéBlog - Your Ultimate Pokémon Resource</title>
     <meta
       name="description"
-      content="Discover, explore, and learn about Pokemon with our comprehensive Pokedex and blog."
+      content="Discover, explore, and learn about Pokemon."
     />
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="src/css/components.css" />
-    <link rel="stylesheet" href="src/css/responsive.css" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link rel="stylesheet" href="src/styles/responsive.css" />
+    <link rel="stylesheet" href="src/styles/components.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,16 +24,16 @@
   </head>
   <body>
     <div id="app">
+      <!-- Navbar -->
       <header class="header">
         <nav class="nav">
           <div class="nav-brand">
-            <h1 class="nav-title">PokéBlog</h1>
+            <a href="/#home">
+              <h1 class="nav-title">PokéBlog</h1>
+            </a>
           </div>
 
           <ul class="nav-menu" id="nav-menu">
-            <li>
-              <a href="#home" class="nav-link active" data-page="home">Home</a>
-            </li>
             <li>
               <a href="#categories" class="nav-link" data-page="categories"
                 >Categories</a
@@ -49,9 +49,6 @@
               <a href="#favorites" class="nav-link" data-page="favorites"
                 >Favorites</a
               >
-            </li>
-            <li>
-              <a href="#about" class="nav-link" data-page="about">About</a>
             </li>
           </ul>
 
@@ -72,38 +69,20 @@
         </nav>
       </header>
 
-      <main class="main" id="main-content">
-        <!-- Page content will be dynamically loaded here -->
-      </main>
+      <main class="main" id="main-content"></main>
 
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer-content">
-          <p>
+          <span>
             &copy; 2025 PokéBlog. Data provided by
             <a href="https://pokeapi.co/" target="_blank" rel="noopener"
               >PokéAPI</a
             >
-          </p>
+          </span>
         </div>
       </footer>
     </div>
-
-    <!-- ! TODO: Add the following scripts to the bottom of the page -->
-    <!-- Loading overlay -->
-    <!-- <div class="loading-overlay" id="loading-overlay">
-      <div class="loading-spinner"></div>
-      <p class="loading-text">Loading...</p>
-    </div> -->
-
-    <!-- Error modal -->
-    <!-- <div class="error-modal" id="error-modal">
-        <div class="error-content">
-            <h3>Oops! Something went wrong</h3>
-            <p class="error-message" id="error-message"></p>
-            <button class="btn btn-primary" id="error-close">Close</button>
-        </div>
-    </div> -->
-
-    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
