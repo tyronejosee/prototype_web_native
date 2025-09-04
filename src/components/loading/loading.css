@@ -1,0 +1,83 @@
+.skeleton-loader {
+  padding: var(--spacing-6);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-secondary);
+}
+
+.skeleton-image,
+.skeleton-image-large,
+.skeleton-text,
+.skeleton-badge {
+  background: linear-gradient(
+    90deg,
+    var(--gray-300) 25%,
+    var(--gray-200) 50%,
+    var(--gray-300) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-pulse 2s infinite;
+  border-radius: var(--radius-md);
+}
+
+.skeleton-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--spacing-4);
+}
+
+.skeleton-image-large {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto var(--spacing-4);
+}
+
+.skeleton-text {
+  height: 1.2em;
+  margin-bottom: var(--spacing-2);
+}
+
+.skeleton-text-lg {
+  height: 1.5em;
+}
+.skeleton-text-xl {
+  height: 2em;
+}
+.skeleton-text-sm {
+  height: 1em;
+  width: 60%;
+  margin: 0 auto var(--spacing-2);
+}
+.skeleton-text-md {
+  width: 80%;
+  margin: 0 auto var(--spacing-2);
+}
+
+.skeleton-badges {
+  display: flex;
+  gap: var(--spacing-2);
+  justify-content: center;
+  margin-top: var(--spacing-3);
+}
+
+.skeleton-badge {
+  width: 60px;
+  height: 24px;
+}
+
+.skeleton-detail-header {
+  text-align: center;
+  margin-bottom: var(--spacing-8);
+}
+
+.skeleton-detail-content > .skeleton-text {
+  margin-bottom: var(--spacing-4);
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
